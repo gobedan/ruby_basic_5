@@ -7,7 +7,6 @@ module InstanceCounter
   end
 
   module InstanceMethods
-    
     protected
     
     def register_instance
@@ -17,7 +16,6 @@ module InstanceCounter
 
 
   module ClassMethods
-
     def instances
       return @instances_count
     end
@@ -31,5 +29,4 @@ module InstanceCounter
       subclass.instance_variable_set(:@instances_count, 0)
     end
   end
-
 end

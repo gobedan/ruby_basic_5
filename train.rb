@@ -70,5 +70,4 @@ class Train
       station.accept_train(self)
     end
   end
-
 end

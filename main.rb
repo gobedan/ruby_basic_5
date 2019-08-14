@@ -7,7 +7,6 @@ require_relative './passenger_train.rb'
 require_relative './cargo_train.rb'
 
 class MainMenu
-
   def initialize
     init_text
     @trains = [] 

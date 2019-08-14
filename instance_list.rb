@@ -1,13 +1,11 @@
 #Модуль для реализации методов Station::all и Train::find
 module InstanceList
-  
   def self.included(base)
    base.include(InstanceMethods)
    base.extend(ClassMethods)    
   end
 
   module InstanceMethods
-    
     protected
     
     def register_instance_in_list
@@ -23,5 +21,4 @@ module InstanceList
       @@instance_list
     end   
   end
-
 end

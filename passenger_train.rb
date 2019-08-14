@@ -1,7 +1,6 @@
 require_relative './train.rb'
 
 class PassengerTrain < Train
-  
   def add_carriage(carriage)
     super if carriage.type == valid_type 
   end
